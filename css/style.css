@@ -10,8 +10,8 @@ body{
     background-color: #7C2D12;
     display: flex;
     justify-content: space-around;
-    position: fixed;
-    z-index: 1000;
+    
+
 }
 .lego img{
     width: 70px;
