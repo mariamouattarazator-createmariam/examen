@@ -10,8 +10,8 @@ body{
     background-color: #7C2D12;
     display: flex;
     justify-content: space-around;
-    
-
+    position: fixed;
+    z-index: 1000;
 }
 .lego img{
     width: 70px;
@@ -327,11 +327,10 @@ body{
     justify-content: space-around;
 }
 .tout{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
     gap: 20px;
     justify-content: space-around;
-    max-width: 100%;
+
 }
 .mail a{
     text-decoration: none;
@@ -411,21 +410,21 @@ body{
 }
 @media (max-width: 480px) {
     .bloc1 { 
-        width: 100%;
+        width: 84%;
     }
     .image h1 {
         font-size: 20px;
-        top: 35%;
+        top: 50%;
     }
     .btt {
         font-size: 12px;
         padding: 6px 12px;
-        top: 50%;
+        top: 75%;
     }
     .btn{
         font-size: 12px;
         padding: 6px 12px;
-        top: 45%;
+        top: 70%;
     }
     .map{
         width: 100%;
@@ -433,10 +432,9 @@ body{
      .propos p, .equipe p, .reservation p {
         max-width: 100%;        
     }  
-    .tout{
-        max-width: 80%;
-        display: grid;
-        grid-template-columns: 1fr;
+    .footer {
+        flex-direction: column;
+        gap: 10px;
     } 
     .fot {
         width: 100%;
