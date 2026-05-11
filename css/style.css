@@ -9,6 +9,11 @@ body{
     background-color: #7C2D12;
     display: flex;
     justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+     z-index: 1000;
 }
 .lego img{
     width: 70px;
@@ -398,7 +403,11 @@ body{
         flex-direction: column;
         gap: 10px;
     }
+    .tout{
+        gap: 10px;
+    }
     .team img{
         max-width: 100%;
     }
 }
+
