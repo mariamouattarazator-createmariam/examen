@@ -6,7 +6,6 @@ body{
 }
 .bloc1{
     max-width: 100%;
-    width: 100%;
     height: 60px;
     background-color: #7C2D12;
     display: flex;
@@ -22,8 +21,7 @@ body{
     list-style: none;
 	display: flex;
 	align-items: center;
-    font-size: 14px;
-    padding: 5px;
+    
 
 }
 .menu a{
@@ -330,9 +328,10 @@ body{
     justify-content: space-around;
 }
 .tout{
-    display: flex;
     gap: 20px;
-    justify-content: space-around;
+    margin-left: 5%;
+    grid-template-columns: repeat(2,1fr);
+
 
 }
 .mail a{
@@ -365,12 +364,21 @@ body{
      .propos p, .equipe p, .reservation p {
         max-width: 100%;        
     }
+    .bloc1{
+        height: 60px;
+
+    }
+    .menu a{
+        font-size: 14px;
+        padding: 5px;
+    }
 }
 @media (max-width: 668px) {
     .bloc1 {
         flex-direction: column;
         height: auto;
         padding: 10px 0;
+        width: 100%;
     }
     .menu {
         flex-direction: column;
@@ -411,9 +419,9 @@ body{
         max-width: 100%;
     }
 }
-@media (max-width: 480px) {
+@media (max-width: 430px) {
     .bloc1 { 
-        width: 84%;
+        width: 100%;
     }
     .image h1 {
         font-size: 20px;
